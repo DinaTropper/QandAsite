@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QandAsite.web", "QandAsite.web\QandAsite.web.csproj", "{36024B40-D0C4-412C-ABDF-FADE4CA4865E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QandAsite.Data", "QandAsite.Data\QandAsite.Data.csproj", "{75FA0235-3E0E-44C6-82E8-28A03B2814A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36024B40-D0C4-412C-ABDF-FADE4CA4865E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36024B40-D0C4-412C-ABDF-FADE4CA4865E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36024B40-D0C4-412C-ABDF-FADE4CA4865E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36024B40-D0C4-412C-ABDF-FADE4CA4865E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75FA0235-3E0E-44C6-82E8-28A03B2814A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75FA0235-3E0E-44C6-82E8-28A03B2814A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75FA0235-3E0E-44C6-82E8-28A03B2814A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75FA0235-3E0E-44C6-82E8-28A03B2814A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E317BFB-5B81-45A4-8649-69FE27B76946}
+	EndGlobalSection
+EndGlobal

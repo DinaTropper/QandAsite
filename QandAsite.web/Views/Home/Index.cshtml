@@ -1,0 +1,65 @@
+﻿@model QandAViewModel
+<div b-k8y6yzo0ym class="container">
+    @foreach (var q in Model.Questions)
+    {
+
+        <div class="row">
+            <div class="col-md-8 offset-md-2" style="margin-top:100px">
+                <div class="card card-body bg-light">
+                    <h4>
+                        <a href="/question/questionbig?id=@q.Id">
+                            @q.Title
+                        </a>
+                    </h4>
+                    <span>Tags:</span>
+
+                    @foreach (var t in q.QuestionTags)
+                    {
+                        <a href="/question/questionsbytag?name=@t.Tag.Name">
+                            <span class="badge bg-primary">@t.Tag.Name</span>
+                        </a>
+                       
+                    }
+                    <div style="margin-top: 10px;">
+                        @q.Text
+                    </div>
+                    <span>Likes: @q.Likes</span>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <input type="hidden" id="id" value="@q.Id" />
+                        <i style="font-size: 40px; cursor:pointer;" class="bi bi-heart-fill" id="like-question" data-question-id="@q.Id"></i>
+                        <br />
+
+                    }
+                    <br />
+                    <a href="/question/Questionbig?id=@q.Id">
+
+                        <span>@q.Answers.Count</span>
+                    </a>
+                    <span>Answer(s)</span>
+                </div>
+            </div>
+        </div>
+    }
+
+    </main>
+</div>
+
+@* @section scripts {
+    <script src="~/js/likes.js"></script>
+} *@
+@section scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.js"></script>
+    <script>
+        $(() => {
+            $("#tags").tagsinput({
+                tagClass: 'badge bg-dark'
+            });
+        })
+    </script>
+}
+@section styles
+{
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.css" />
+}
+
